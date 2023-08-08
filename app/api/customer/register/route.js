@@ -24,11 +24,3 @@ export async function POST(request) {
     console.log(err.stack);
   }
 }
-
-export async function GET(request) {
-  try {
-    return NextResponse.json({ status: true });
-  } catch (error) {
-    console.log(error);
-  }
-}
